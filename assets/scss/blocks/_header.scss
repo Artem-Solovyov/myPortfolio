@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    width: 100%;
+    // top: 0;
+    // left: 0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #3a3a3a;
+    z-index: 100;
+
+    &__container {
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        @include adaptive-value("height", 40, 30, 1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > * {
+            flex: 1;
+        }
+    }
+
+    &__logo {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: rem(6);
+        @include adaptive-value("font-size", 22, 16, 1);
+        font-weight: 500;
+        &::before {
+            @include adaptive-value("font-size", 24, 18, 1);
+        }
+        z-index: 200;
+    }
+
+    &__nav {
+        flex: 1.7;
+    }
+
+    &__social {
+        flex: 0.5;
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        justify-content: center;
+        @include adaptive-value("column-gap", 48, 20, 1, 768);
+    }
+
+    &__item {
+        cursor: pointer;
+        @include adaptive-value("font-size", 20, 14, 1, 768);
+        font-weight: 500;
+        @media (max-width: em(780)) {
+            font-size: rem(24);
+            font-weight: 300;
+        }
+        transition: color 0.3s ease;
+        @media (any-hover: hover) {
+            &:hover {
+                transition: color 0.3s ease;
+                color: #fe6700;
+            }
+        }
+    }
+}
+.social {
+    &__list {
+        display: flex;
+        justify-content: end;
+        column-gap: rem(22);
+    }
+
+    &__item {
+    }
+
+    &__link {
+        &::before {
+            transition: color 0.3s ease;
+            font-size: rem(20);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                &::before {
+                    transition: color 0.3s ease;
+                    color: #fe6700;
+                }
+            }
+        }
+    }
+}
+.menu {
+    &__icon {
+    }
+
+    &__body {
+    }
+}
+.icon-menu {
+}

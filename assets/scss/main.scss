@@ -1,0 +1,14 @@
+@use "sass:math";
+
+// base
+@import "./base/reset";
+@import "./base/av";
+@import "./base/ibg";
+@import "./base/menuBurger";
+@import "./base/base";
+@import "./base/common";
+
+//blocks
+@import "./blocks/header";
+@import "./blocks/content";
+@import "./blocks/footer";

@@ -1,0 +1,117 @@
+.icon-menu {
+    @media (max-width: em(780)) {
+        margin: rem(5);
+        z-index: 100;
+        display: block;
+        position: relative;
+        width: rem(40);
+        height: rem(24);
+        cursor: pointer;
+
+        &::before,
+        &::after,
+        & span {
+            content: "";
+
+            position: absolute;
+            height: rem(2);
+
+            width: 100%;
+            transition: all 0.3s ease 0s;
+            background-color: #fff;
+        }
+        &::before,
+        &::after {
+            content: "";
+        }
+        &::before {
+            right: 0;
+            top: 0;
+            width: 70%;
+        }
+        &::after {
+            left: 0;
+            bottom: 0;
+            width: 70%;
+        }
+        & span {
+            left: 0;
+            top: 50%;
+
+            transform: scale(1) translate(0px, -50%);
+        }
+        &._active span {
+            transform: scale(0);
+        }
+        &._active::before {
+            width: 100%;
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, 0%);
+        }
+        &._active::after {
+            width: 100%;
+            top: 50%;
+            transform: rotate(45deg) translate(0px, 0%);
+        }
+    }
+}
+.menu {
+    @media (max-width: em(780)) {
+        display: flex;
+        justify-content: end;
+    }
+    &__icon {
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        background: rgba(29, 29, 31, 1);
+
+        position: fixed;
+        z-index: 50;
+        top: 0;
+        left: -130%;
+        transition: left 0.3s ease;
+        width: 100vw;
+        height: 100vh;
+        @include adaptive-value("padding-top", 90, 70, 1, 322, 768);
+        overflow: auto;
+        &._active {
+            transition: left 0.3s ease;
+            left: 0;
+        }
+
+        .header__nav {
+            flex: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: stretch;
+        }
+        .header__social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: auto;
+        }
+        .nav__list {
+            border-top: 1px solid #3a3a3a;
+            flex-direction: column;
+            text-align: center;
+            line-height: 2.5;
+            width: 100%;
+        }
+        .nav__item {
+            border-bottom: 1px solid #3a3a3a;
+        }
+        .social__list {
+            column-gap: rem(60);
+        }
+        .social__link {
+            &::before {
+                font-size: rem(28);
+            }
+        }
+    }
+}

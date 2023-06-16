@@ -1,0 +1,36 @@
+.footer {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #3a3a3a;
+    padding: rem(18) 0;
+    &__container {
+    }
+
+    &__social {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: rem(16);
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: rem(26);
+    }
+
+    &__item {
+        display: flex;
+        column-gap: rem(8);
+        transition: color 0.3s ease;
+        @include adaptive-value("font-size", 18, 14, 1);
+        @media (any-hover: hover) {
+            &:hover {
+                transition: color 0.3s ease;
+                color: #fe6700;
+            }
+        }
+    }
+
+    &__copy {
+        text-align: center;
+        @include adaptive-value("font-size", 14, 12, 1);
+    }
+}

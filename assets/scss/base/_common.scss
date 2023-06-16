@@ -1,0 +1,90 @@
+.button {
+    position: relative;
+    z-index: 0;
+    font-family: inherit;
+    font-size: 20px;
+    // background: rgba(241, 146, 88, 0.12);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    background-color: rgba(255, 255, 255, 0.074);
+    color: #fe6700;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: inline-flex;
+    align-items: center;
+    // border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.button:hover svg {
+    transform: translateX(3em) rotate(45deg) scale(1.1);
+}
+
+.button:hover span {
+    transform: translateX(10em);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+
+.text {
+    width: 29ch;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    white-space: nowrap; /* не переносить текст на другую строку */
+    overflow: hidden; /* скрываем переполнение контентом */
+    border-right: 3px solid white; /* рисуем курсор */
+    animation: cursor 0.75s step-end infinite, printed_text 5s steps(29);
+}
+
+@keyframes cursor {
+    0% {
+        border-color: white;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: white;
+    }
+}
+
+@keyframes printed_text {
+    from {
+        width: 0;
+    }
+}

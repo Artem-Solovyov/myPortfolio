@@ -1,0 +1,86 @@
+// Settings
+$minWidth: 320;
+$maxWidthContainer: 1170;
+$containerPadding: 110;
+
+$tablet: em(767.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+@font-face {
+    font-family: "icons";
+    src: url("../assets/src/icons-font/icons.eot?ymq3tt");
+    src: url("../assets/src/icons-font/icons.eot?ymq3tt#iefix") format("embedded-opentype"),
+        url("../assets/src/icons-font/icons.ttf?ymq3tt") format("truetype"),
+        url("../assets/src/icons-font/icons.woff?ymq3tt") format("woff"),
+        url("../assets/src/icons-font/icons.svg?ymq3tt#icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icons" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-code:before {
+    content: "\e900";
+    // color: #fff;
+}
+._icon-git:before {
+    content: "\e902";
+    // color: #fff;
+}
+._icon-email:before {
+    content: "\e901";
+    // color: #f5f5f7;
+}
+._icon-tg:before {
+    content: "\e903";
+    // color: #f5f5f7;
+}
+._icon-phone:before {
+    content: "\e908";
+}
+
+[class*="__container"] {
+    max-width: rem($maxWidthContainer);
+    box-sizing: content-box;
+    margin: 0 auto;
+    @include adaptive-value("padding-left", 25, 10, 1, 320, 768);
+    @include adaptive-value("padding-right", 25, 10, 1, 320, 768);
+    @media (min-width: $tablet) {
+        padding: 0 rem(math.div($containerPadding, 2));
+    }
+
+    @media (max-width: em(1280)) and (min-width: em(767.98)) {
+        @include adaptive-value("padding-left", 55, 25, 1, 768);
+        @include adaptive-value("padding-right", 55, 25, 1, 768);
+    }
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: rem(16);
+    color: #fafafa;
+    background-image: url(../assets/src/images/bg.jpg);
+    background-size: 50px;
+    overflow-x: hidden;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
