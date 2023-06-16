@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="main_header">
+          <div class="layers">
+            <div class="layer__header">
+              <div class="layers__caption">Welcome to Parallax</div>
+              <div class="layers__title">FAIRY FOREST</div>
+            </div>
+            <div
+              class="layer layers__base"
+              style="background-image: url(img/layer-base.png)"
+            ></div>
+            <div
+              class="layer layers__middle"
+              style="background-image: url(img/layer-middle.png)"
+            ></div>
+            <div
+              class="layer layers__front"
+              style="background-image: url(img/layer-front.png)"
+            ></div>
+          </div>
+        </header>
+        <article
+          class="main_article"
+          style="background-image: url(img/dungeon.jpg)"
+        >
+          <div class="main_article__content">
+            <h2 class="main_article__header">To be continued</h2>
+            <p class="main_article__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus aliquam, cupiditate delectus doloremque ducimus fuga
+              ipsa, libero maiores modi numquam, odio officiis quae quidem quis
+              quos rem repellendus ullam voluptates.
+            </p>
+          </div>
+          <div class="copy">© Artem Solovyov</div>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
