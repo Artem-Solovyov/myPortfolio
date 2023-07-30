@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta property="og:site_name" content="Portfolio AS" />
+
+    <meta property="og:title" content="Front-end developer Artem Soloviov" />
+    <meta property="og:description" content="Portfolio Page Front-end developer Artem Soloviov" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:image" content="./assets/src/favicon/android-chrome-192x192.png" />
+
+    <meta property="og:image:alt" content="Developer" />
+    <meta property="og:url" content="https://portfolio-artem-soloviov.netlify.app/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/src/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/src/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/src/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/src/favicon/site.webmanifest" />
+
+    <title>Artem Soloviov</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <script src="./assets/libs/ad.js" defer></script>
+
+    <link rel="stylesheet" href="gallery/style/style.css" />
+    <script src="gallery/js/app.js" defer></script>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div data-goto=".wrapper" class="header__logo _icon-code">Artem Soloviov</div>
+          <nav data-da=".menu__body,780,first" class="header__nav nav">
+            <ul class="nav__list">
+              <li data-goto=".projects" class="nav__item">Projects</li>
+              <li data-goto=".case" class="nav__item">Cases</li>
+              <li data-goto=".technologies" class="nav__item">Technologies</li>
+              <li data-goto=".about" class="nav__item">About me</li>
+            </ul>
+          </nav>
+          <div data-da=".menu__body,780,2" class="header__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a target="_blank" href="https://github.com/Artem-Solovyov" class="social__link _icon-git"></a>
+              </li>
+              <li class="social__item">
+                <a target="_blank" href="https://t.me/tema_slvv" class="social__link _icon-tg"></a>
+              </li>
+              <li class="social__item">
+                <a target="_blank" href="mailTo:solovevartem892@gmail.com" class="social__link _icon-email"></a>
+              </li>
+            </ul>
+          </div>
+
+          <div hidden class="menu">
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <div class="menu__body"></div>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="content__header header-content">
+          <div class="header-content__container">
+            <h1 class="header-content__title">Website Development</h1>
+            <div class="header-content__text">
+              <p>
+                Hello everybody. My name is Artem Soloviov and I'm a web developer from Ukraine. My hobby is making cool websites for you.
+                My projects are robust, cross-browser, responsive and semantic. And it will be my great pleasure to work with you!
+              </p>
+            </div>
+
+            <a target="_blank" href="https://t.me/tema_slvv" class="button">
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span>Get in touch</span>
+            </a>
+          </div>
+        </section>
+        <section class="content__projects projects">
+          <div class="projects__container">
+            <h2 class="projects__title">Projects</h2>
+
+            <div class="projects__items">
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://futurevoyagers.xyz/" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/nft.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">Future Voyag3rs</h3>
+                <div class="item-project__text">
+                  <p>
+                    Introducing the Launch of the NFT Collection: Future Voyag3rs. Future Voyagers is a captivating collection of unique NFT
+                    heroes and thrilling adventures set in a futuristic universe driven by artificial intelligence.
+                  </p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">GULP</li>
+                  <li class="item-project__t">SCSS</li>
+                  <li class="item-project__t">WebPack</li>
+                  <li class="item-project__t">LazyLoading</li>
+                  <li class="item-project__t">Many interesting features</li>
+                </ul>
+                <a target="_blank" href="http://futurevoyagers.xyz/" class="item-project__link">View project</a>
+              </article>
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://chain.ecredits.com/" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/ecredits.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">eCredits EVM Layer 1 Chain</h3>
+                <div class="item-project__text">
+                  <p>One of the first working projects. Website for EVM Layer 1 Blockchain eCredits.</p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">HTML</li>
+                  <li class="item-project__t">SCSS</li>
+                  <li class="item-project__t">JS</li>
+                  <li class="item-project__t">CMS WordPress</li>
+                  <li class="item-project__t">Fetch API</li>
+                  <li class="item-project__t">PHP Mailer</li>
+                </ul>
+                <a target="_blank" href="https://chain.ecredits.com/" class="item-project__link">View project</a>
+              </article>
+
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://slvnkt.xyz/" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/ns.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">Website for a Web Designer</h3>
+                <div class="item-project__text">
+                  <p>The beautiful design and robust layout of the site gives a stunning effect.</p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">HTML</li>
+                  <li class="item-project__t">SCSS</li>
+                  <li class="item-project__t">JS</li>
+                </ul>
+                <a target="_blank" href="https://slvnkt.xyz/" class="item-project__link">View project</a>
+              </article>
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://elaborate-macaron-2217e2.netlify.app" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/ciclo.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">Ciclo</h3>
+                <div class="item-project__text">
+                  <p>Practical project built from a presentation template. Interesting site with nice animation.</p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">HTML</li>
+                  <li class="item-project__t">SCSS</li>
+                  <li class="item-project__t">JS</li>
+                  <li class="item-project__t">SwiperJS</li>
+                </ul>
+                <a target="_blank" href="https://elaborate-macaron-2217e2.netlify.app" class="item-project__link">View project</a>
+              </article>
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://peaceful-melomakarona-8db569.netlify.app" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/nexa.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">Nexa</h3>
+                <div class="item-project__text">
+                  <p>One of the presented designs for the foreign company Nexa, which specializes in event management.</p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">GULP</li>
+                  <li class="item-project__t">WebPack</li>
+                  <li class="item-project__t">HTML</li>
+                  <li class="item-project__t">SCSS</li>
+                  <li class="item-project__t">JS</li>
+                  <li class="item-project__t">Parallax</li>
+                </ul>
+                <a target="_blank" href="https://peaceful-melomakarona-8db569.netlify.app" class="item-project__link">View project</a>
+              </article>
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://charming-kulfi-18b4f5.netlify.app" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/furniture.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">Furniture Shop</h3>
+                <div class="item-project__text">
+                  <p>One of my favorite works. There are many different techniques applied here for a good and responsive work.</p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">JS</li>
+                  <li class="item-project__t">SwiperJS</li>
+                  <li class="item-project__t">Dinamic adaptive</li>
+                  <li class="item-project__t">AJAX</li>
+                </ul>
+                <a target="_blank" href="https://charming-kulfi-18b4f5.netlify.app" class="item-project__link">View project</a>
+              </article>
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://artem-solovyov.github.io/app_pizza/" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/pizza.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">React PIZZA</h3>
+                <div class="item-project__text">
+                  <p>I present to your attention my second project on the React library.</p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">ReactJS</li>
+                  <li class="item-project__t">TypeScript</li>
+                  <li class="item-project__t">React.Lazy</li>
+                  <li class="item-project__t">Redux Toolkit</li>
+                  <li class="item-project__t">Router v6</li>
+                  <li class="item-project__t">Redux-thunk</li>
+                </ul>
+                <a target="_blank" href="https://artem-solovyov.github.io/app_pizza/" class="item-project__link">View project</a>
+              </article>
+              <article class="projects__item item-project">
+                <a target="_blank" href="https://astonishing-mochi-168154.netlify.app" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/zlatmax.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">Online store - Zlatmax</h3>
+                <div class="item-project__text">
+                  <p>
+                    My practical project, which was created to showcase my skills. A wonderful and significant undertaking with numerous
+                    interesting approaches and features.
+                  </p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">HTML</li>
+                  <li class="item-project__t">SCSS</li>
+                  <li class="item-project__t">JS</li>
+                </ul>
+                <a target="_blank" href="https://astonishing-mochi-168154.netlify.app" class="item-project__link">View project</a>
+              </article>
+              <!-- <article class="projects__item item-project">
+                <a target="_blank" href="https://stellular-sprinkles-7b2c95.netlify.app" class="item-project__image _ibg">
+                  <img src="./assets/src/images/projects/growfy.png" alt="Project" />
+                </a>
+                <h3 class="item-project__title">Growfy</h3>
+                <div class="item-project__text">
+                  <p>A practical example of a site with a beautiful design, robust site layout and good responsiveness.</p>
+                </div>
+                <ul class="item-project__list">
+                  <li class="item-project__t">HTML</li>
+                  <li class="item-project__t">SCSS</li>
+                  <li class="item-project__t">JS</li>
+                </ul>
+                <a target="_blank" href="https://stellular-sprinkles-7b2c95.netlify.app" class="item-project__link">View project</a>
+              </article> -->
+            </div>
+          </div>
+        </section>
+        <section class="content__case case">
+          <div class="case__container">
+            <h2 class="case__title">Exciting cases</h2>
+            <div class="case__text">
+              In this section you can see interesting tricks that can be used for your site. For a better demonstration, please view case
+              studies on the desktops.
+            </div>
+            <div class="magic-list">
+              <a href="gallery/creative-scroll/index.html" class="magic-list__item" target="_blank">
+                <div class="magic-list__header">Creative scroll</div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/7.png)"></div>
+                </div>
+              </a>
+              <a href="gallery/parallax-3d-lens-effect-website/" class="magic-list__item" target="_blank">
+                <div class="magic-list__header">Parallax 3D</div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/8.png)"></div>
+                </div>
+              </a>
+              <a href="gallery/showcase3d/index.html" class="magic-list__item" target="_blank">
+                <div class="magic-list__header">Showcase 3D effect</div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/1.jpg)"></div>
+                </div>
+              </a>
+              <a href="gallery/horizontal-parallax/index.html" class="magic-list__item" target="_blank">
+                <div class="magic-list__header">Horizontal PARALLAX</div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/6.png)"></div>
+                </div>
+              </a>
+              <a href="gallery/paralaxScrolling/index.html" class="magic-list__item" target="_blank">
+                <div class="magic-list__header">Parallax scrolling</div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/2.jpg)"></div>
+                </div>
+              </a>
+              <a href="gallery/gallery/index.html" class="magic-list__item" target="_blank">
+                <div class="magic-list__header">Cool gallery</div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/3.jpg)"></div>
+                </div>
+              </a>
+              <a href="gallery/3dscroll/index.html" class="magic-list__item" target="_blank">
+                <div class="magic-list__header">3D scroll</div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/4.jpg)"></div>
+                </div>
+              </a>
+              <a href="gallery/draggable/index.html" class="magic-list__item" target="_blank">
+                <div class="magic-list__header _l">Draggable <span>(+dark theme)</span></div>
+                <div class="cursor">
+                  <div class="cursor__image" style="background-image: url(gallery/img/5.jpg)"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="content__technologies technologies">
+          <div class="technologies__container">
+            <div class="technologies__title">Technologies</div>
+            <div class="technologies__items">
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">HTML</div>
+                  <div class="item-technologies__level">Advanced</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">CSS & SCSS</div>
+                  <div class="item-technologies__level">Advanced</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">JavaScript, TypeScript</div>
+                  <div class="item-technologies__level">Advanced</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr _js"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">GIT</div>
+                  <div class="item-technologies__level">Regular</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr _git"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">React</div>
+                  <div class="item-technologies__level">Regular</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr _react"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">Redux ToolKit</div>
+                  <div class="item-technologies__level">Regular</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr _redux"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">Figma</div>
+                  <div class="item-technologies__level">Regular</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr _figma"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">Python</div>
+                  <div class="item-technologies__level">Beginner</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr _python"></div>
+                </div>
+              </div>
+              <div class="technologies__item item-technologies">
+                <div class="item-technologies__body">
+                  <div class="item-technologies__tech">PHP</div>
+                  <div class="item-technologies__level">Beginner</div>
+                </div>
+                <div class="item-technologies__grade">
+                  <div class="item-technologies__pr _php"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content__about about">
+          <div class="about__container">
+            <h2 class="about__title">Aboute me</h2>
+            <div class="about__text">
+              <p>
+                I am a website developer from Kyiv in Ukraine and I am very good at it. My path was long, two years ago I worked in the
+                construction industry and everything suited me. However, out of curiosity, I began to learn Python, and after a week I
+                realized that in my life I had not yet received so much pleasure as from learning programming languages. After some time, I
+                decided on the direction and moved on to an in-depth study of the css, html and js.<br /><br />
+                Now I already have half a year of commercial and a lot of practical experience behind me. I do not stand still and study new
+                technologies and libraries every day. I have a huge desire to create something cool and new. <br /><br />At this stage, my
+                dream is to start creating cool projects on the React library. However, this alone is not entirely realistic. But my journey
+                in IT has just begun and there is still a lot of things ahead.<br /><br />
+                And that's what I can say for sure - I'm madly in love with my work and when you turn to me you get a quality product.
+              </p>
+            </div>
+            <a target="_blank" href="https://t.me/tema_slvv" class="button">
+              <div class="svg-wrapper-1">
+                <div class="svg-wrapper">
+                  <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <span>Get in touch</span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__social">
+            <a href="mailTo:solovevartem892@gmail.com" class="footer__item _icon-email">solovevartem892@gmail.com</a>
+            <a href="tel:+380990204276" class="footer__item _icon-phone">+380990204276</a>
+          </div>
+          <div class="footer__copy">@Artem Soloviov 2023</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
